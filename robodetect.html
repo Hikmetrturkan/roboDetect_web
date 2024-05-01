@@ -13,6 +13,10 @@
 
 <body>
     <nav class="navbar">
+        <div class="robodetect-logo">
+            ROBODETECT
+        </div>
+        
         <a href="#home" class="scroll-link">Home</a>
         <a href="#features" class="scroll-link">Features</a>
         <a href="#how-it-works" class="scroll-link"> How It Works</a>
@@ -21,7 +25,7 @@
     </nav>
     <header class="hero" id="home">
         <div class="hero-content">
-            <h1>ROBODETECT<br>Robot dog control and command system for human detection, tracking and  mapping.</h1>
+            <h1 class="robodetect-style">ROBODETECT<br>Robot dog control and command system for <b class="human">human</b> detection, tracking and  mapping.</h1>
             <p>Robodetect project is designed to help rescue teams to plan their rescue operations in disaster areas.
                 By using cutting edge technologies Robodetect ensures successfull rescue. With <b>ROBODETECT</b>, rescue operations 
                 will be more faster, reliable and secure for both rescuer and survivors.</p>
@@ -212,15 +216,15 @@
                     </div>
                 </div>
                 <div class="tech-plate">
-                    <div class="tech-plate-image">
-                        <img src="images/ros.jpeg" alt="Flutter">
+                    <div class="tech-plate-image_invert">
+                        <img src="images/ros2.png" alt="Flutter">
                     </div>
                     <div class="tech-plate-content">
                         ROS
                     </div>
                 </div>
                 <div class="tech-plate">
-                    <div class="tech-plate-image">
+                    <div class="tech-plate-image_invert">
                         <img src="images/flask.png" alt="Firebase">
                     </div>
                     <div class="tech-plate-content">
@@ -254,8 +258,8 @@
                 <div class="team-member">
                     <img src="images/barış.png" alt="Barış Sarper Tezcan">
                     <div class="middle">
-                        <a href="https://www.linkedin.com/in/aerengns/"><i class='fa fa-linkedin-square fa-2x'></i></a>
-                        <a href="https://github.com/aerengns"><i class="fa fa-github fa-2x"></i></i></a>
+                        <a href="https://www.linkedin.com/in/"><i class='fa fa-linkedin-square fa-2x'></i></a>
+                        <a href="https://github.com/"><i class="fa fa-github fa-2x"></i></i></a>
                     </div>
                     <h3>Barış Sarper Tezcan</h3>
                     <p>Project Manager</p>
@@ -263,9 +267,9 @@
                 <div class="team-member">
                     <img src="images/furkan.png" alt="Furkan Genç">
                     <div class="middle">
-                        <a href="https://www.linkedin.com/in/cengineer13/"><i
+                        <a href="https://www.linkedin.com/in/"><i
                                 class='fa fa-linkedin-square fa-2x'></i></a>
-                        <a href="https://github.com/Cengineer00"><i class="fa fa-github fa-2x"></i></i></a>
+                        <a href="https://github.com/"><i class="fa fa-github fa-2x"></i></i></a>
                     </div>
                     <h3>Furkan Genç</h3>
                     <p>Developer</p>
@@ -273,8 +277,8 @@
                 <div class="team-member">
                     <img src="images/serhat.png" alt="Serhat Andıç">
                     <div class="middle">
-                        <a href="https://www.linkedin.com/in/nurayakar/"><i class='fa fa-linkedin-square fa-2x'></i></a>
-                        <a href="https://github.com/ingeniararto"><i class="fa fa-github fa-2x"></i></i></a>
+                        <a href="https://www.linkedin.com/in/"><i class='fa fa-linkedin-square fa-2x'></i></a>
+                        <a href="https://github.com/"><i class="fa fa-github fa-2x"></i></i></a>
                     </div>
                     <h3>Serhat Andıç</h3>
                     <p>Developer</p>
@@ -282,9 +286,9 @@
                 <div class="team-member">
                     <img src="images/ismail.png" alt="İsmail Karabaş">
                     <div class="middle">
-                        <a href="https://www.linkedin.com/in/aylin-topcu/"><i
+                        <a href="https://www.linkedin.com/in/"><i
                                 class='fa fa-linkedin-square fa-2x'></i></a>
-                        <a href="https://github.com/aylintopcu"><i class="fa fa-github fa-2x"></i></i></a>
+                        <a href="https://github.com/"><i class="fa fa-github fa-2x"></i></i></a>
                     </div>
                     <h3>İsmail Karabaş</h3>
                     <p>Developer</p>
@@ -292,9 +296,9 @@
                 <div class="team-member">
                     <img src="images/hikmet.jpeg" alt="Hikmet Türkan">
                     <div class="middle">
-                        <a href="https://www.linkedin.com/in/kursatkaya/"><i
+                        <a href="https://www.linkedin.com/in//"><i
                                 class='fa fa-linkedin-square fa-2x'></i></a>
-                        <a href="https://github.com/kursatfelsen"><i class="fa fa-github fa-2x"></i></i></a>
+                        <a href="https://github.com/"><i class="fa fa-github fa-2x"></i></i></a>
                     </div>
                     <h3>Hikmet Türkan</h3>
                     <p>Developer</p>
@@ -325,7 +329,7 @@
             </div>
             <div class="contact-item">
                 <h3>
-                Sponsor</h3> <img style="margin-bottom: -1rem;" src="images/Aselsan_Logo.png" alt="Sponsor">
+                Sponsor</h3>  <a href="https://www.aselsan.com/tr"><img class="aselsan" style="margin-bottom: -1rem;"  src="images/Aselsan_Logo.png" alt="Sponsor"></a>
                 
             </div>
         </section>
@@ -422,7 +426,24 @@
             }
         });
     });
-
+    document.addEventListener('scroll', function() {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        var fadeStart = 50; // Start fade at 100px scroll
+        var fadeUntil = 200; // End fade at 500px scroll
+    
+        var opacity = 1;
+        if (scrollTop <= fadeStart) {
+            opacity = 1;
+        } else if (scrollTop <= fadeUntil) {
+            opacity = 1 - (scrollTop - fadeStart) / (fadeUntil - fadeStart);
+        } else {
+            opacity = 0;
+        }
+    
+        document.querySelector('.human').style.opacity = opacity;
+    });
 </script>
+
+    
 
 </html>
