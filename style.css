@@ -39,7 +39,7 @@ a {
 
 a:hover {
     color: var(--color-red);
-    cursor: url(images/minimal-tomato-pointer.png), auto;
+
 }
 
 .btn {
@@ -57,7 +57,7 @@ a:hover {
 
 .btn:hover {
     background-color: var(--color-black);
-    cursor: url(images/minimal-tomato-pointer.png), auto;
+
 }
 
 body {
@@ -127,7 +127,7 @@ nav {
 
     overflow: hidden; /* Ensures the text fits in the div */
     text-transform: uppercase; /* Makes all letters uppercase */
-    background: url('/images/texture.jpeg'); /* Path to a distressed texture background */
+    background: url('images/texture.jpeg'); /* Path to a distressed texture background */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
@@ -138,7 +138,7 @@ nav {
     font-family: 'Arial Black', sans-serif; /* Bold, impactful font */
     overflow: hidden; /* Ensures the text fits in the div */
     text-transform: uppercase; /* Makes all letters uppercase */
-    background: url('/images/35mm-film-grain-texture-wallpaper-thumb.jpg'); /* Path to a distressed texture background */
+    background: url('images/35mm-film-grain-texture-wallpaper-thumb.jpg'); /* Path to a distressed texture background */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /*display: inline-block;*/
@@ -509,7 +509,7 @@ footer {
 /* Parallax Scrolling */
 .parallax {
     /* The image used */
-    background-image: url('images/tomatoes.jpg');
+
 
     /* Full height */
     height: 100%;
@@ -577,12 +577,6 @@ a[href^="mailto:"]:hover {
     font-weight: bold;
   }
   
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: url(images/minimal-tomato-pointer.png), auto;
-  }
 
   /* Existing CSS code */
 
