@@ -68,7 +68,7 @@ body {
   
     background-color: var(--color-metalgrey);
     height: 100%;
-    cursor: url(images/minimal-tomato-cursor.png), auto;
+    /*cursor: url(images/transparent-crosshair.png), auto;*/
 }
 
 /* Header */
